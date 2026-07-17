@@ -12,37 +12,39 @@ export default function Intro() {
         restDelta: 0.001,
     });
 
-    const animR = useTransform(smoothProgress, [0, 1], [0, 500]);
-    const animL = useTransform(smoothProgress, [0, 1], [0, -500]);
+    const animR = useTransform(smoothProgress, [0, 1], ["0vw", "50vw"]);
+    const animL = useTransform(smoothProgress, [0, 1], ["0vw", "-50vw"]);
 
-    const opacity = useTransform(scrollYProgress, [0.7, 1], [1, 0]); // some no final
+    const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]); // some no final
 
     return (
         <div className="flex  items-center">
             <motion.img
                 src="/left-full.svg"
-                initial={{ translateX: 0 }}
-                animate={{ translateX: -700 }}
-                transition={{ duration: 1, ease: "easeIn" }}
+                initial={{ translateX: "100%" }}
+                animate={{ translateX: "-60vw" }}
+                transition={{ duration: 1.5, ease: "easeIn" }}
                 style={{
                     position: "fixed",
                     top: 0,
                     x: animL,
-                    opacity,
                     zIndex: 20,
+                    height: "100%",
+                    width: "100%",
                 }}
             />
             <motion.img
                 src="/right-full.svg"
-                initial={{ translateX: 0 }}
-                animate={{ translateX: 800 }}
-                transition={{ duration: 1, ease: "easeIn" }}
+                initial={{ translateX: "100%" }}
+                animate={{ translateX: "65vw" }}
+                transition={{ duration: 1.5, ease: "easeIn" }}
                 style={{
                     position: "fixed",
                     top: 0,
                     x: animR,
-                    opacity,
                     zIndex: 20,
+                    height: "100%",
+                    width: "100%",
                 }}
             />
         </div>

@@ -23,18 +23,20 @@ export default function Background() {
             />
 
             <motion.div
-                className="fixed inset-0 z-10 flex items-center pl-24"
+                className="fixed inset-0 z-10 flex items-center px-6 sm:px-12 md:pl-16 lg:pl-24"
                 style={{ scale: anim }}
             >
-                <div className="flex flex-col gap-6 max-w-xl">
+                <div className="flex flex-col gap-4 sm:gap-6 max-w-[90vw] sm:max-w-md md:max-w-lg lg:max-w-xl">
                     <h1 className="text-white uppercase leading-[0.95] tracking-wide">
-                        <span className="flex items-center gap-4 text-6xl">
+                        <span className="flex items-center gap-2 sm:gap-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                             STEP / INTO
                         </span>
-                        <span className="block text-7xl">WONDER</span>
+                        <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                            WONDER
+                        </span>
                     </h1>
                     <p
-                        className="text-white/80 text-lg max-w-80 text-center"
+                        className="text-white/80 text-sm sm:text-base md:text-lg max-w-[75vw] sm:max-w-64 md:max-w-72 lg:max-w-80 text-center"
                         style={{ fontFamily: "imprima" }}
                     >
                         Designing immersive digital experiences that blur the

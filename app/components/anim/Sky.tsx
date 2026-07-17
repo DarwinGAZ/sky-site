@@ -22,14 +22,14 @@ export default function Sky() {
             />
             <motion.div
                 style={{ opacity: opacity }}
-                className="fixed inset-0 z-0 flex mt-20 justify-center"
+                className="fixed inset-0 z-0 flex mt-8 sm:mt-12 md:mt-16 lg:mt-20 items-center justify-center px-4"
             >
-                <div className="flex flex-col gap-6">
-                    <h1 className="text-white uppercase tracking-wide text-6xl">
+                <div className="flex flex-col gap-4 sm:gap-6">
+                    <h1 className="text-white uppercase tracking-wide text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center">
                         Create Beyond Reality
                     </h1>
                     <p
-                        className="text-lg max-w-120 text-center self-center"
+                        className="text-sm sm:text-base md:text-lg max-w-[90vw] sm:max-w-96 md:max-w-[28rem] lg:max-w-120 text-center self-center"
                         style={{ fontFamily: "imprima" }}
                     >
                         Exclusive journeys to breathtaking destinations curated

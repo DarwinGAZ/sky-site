@@ -32,6 +32,7 @@ export default function Intro() {
                     height: "100%",
                     width: "100%",
                 }}
+                fetchPriority="high"
             />
             <motion.img
                 src="/right-full.svg"
@@ -46,6 +47,7 @@ export default function Intro() {
                     height: "100%",
                     width: "100%",
                 }}
+                fetchPriority="high"
             />
         </div>
     );

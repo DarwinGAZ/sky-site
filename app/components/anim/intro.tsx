@@ -15,12 +15,10 @@ export default function Intro() {
     const animR = useTransform(smoothProgress, [0, 1], ["0vw", "50vw"]);
     const animL = useTransform(smoothProgress, [0, 1], ["0vw", "-50vw"]);
 
-    const opacity = useTransform(scrollYProgress, [0, 1], [1, 1]); // some no final
-
     return (
         <div className="flex  items-center">
             <motion.img
-                src="/left-full.svg"
+                src="/left-full.png"
                 initial={{ translateX: "100%" }}
                 animate={{ translateX: "-60vw" }}
                 transition={{ duration: 1.5, ease: "easeIn" }}
@@ -35,7 +33,7 @@ export default function Intro() {
                 fetchPriority="high"
             />
             <motion.img
-                src="/right-full.svg"
+                src="/right-full.png"
                 initial={{ translateX: "100%" }}
                 animate={{ translateX: "65vw" }}
                 transition={{ duration: 1.5, ease: "easeIn" }}
